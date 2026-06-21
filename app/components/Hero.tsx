@@ -431,13 +431,14 @@ export default function HeroSection({ onClassify }: { onClassify: () => void }) 
           <h1 className="mb-5 font-display text-[2.6rem] font-bold leading-[1.1] tracking-tight text-white lg:text-[3.4rem] min-h-[2.2em]">
             {phase === "typing" ? (
               <Typewriter
-                text="Hunt worlds hidden in starlight"
+                text="HUNT WORLDS HIDDEN IN STARLIGHT"
+                
                 speed={50}
                 onDone={() => setPhase("revealing")}
               />
             ) : (
               <>
-                Hunt worlds{" "}
+                HUNT WORLDS{" "}
                 <span
                   style={{
                     backgroundImage:
@@ -447,7 +448,7 @@ export default function HeroSection({ onClassify }: { onClassify: () => void }) 
                     backgroundClip: "text",
                   }}
                 >
-                  hidden in starlight
+                   HIDDEN IN STARLIGHT
                 </span>
               </>
             )}
