@@ -57,7 +57,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
             height: 500,
             top: "-10%",
             left: "-10%",
-            background: "rgba(49,46,129,0.18)",
+            background: "rgba(120,53,15,0.18)",
           }}
         />
         <div
@@ -67,7 +67,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
             height: 400,
             bottom: "-5%",
             right: "-5%",
-            background: "rgba(76,29,149,0.14)",
+            background: "rgba(154,52,18,0.14)",
           }}
         />
       </div>
@@ -93,7 +93,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
             style={{
               width: 72,
               height: 72,
-              border: "1px solid rgba(99,102,241,0.25)",
+              border: "1px solid rgba(251,191,36,0.25)",
               animation: "ping-slow 2s ease-in-out infinite",
             }}
           />
@@ -103,7 +103,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
             style={{
               width: 56,
               height: 56,
-              border: "1px solid rgba(99,102,241,0.35)",
+              border: "1px solid rgba(251,191,36,0.35)",
               animation: "ping-slow 2s ease-in-out infinite 0.4s",
             }}
           />
@@ -114,9 +114,9 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
               width: 40,
               height: 40,
               background: pulse
-                ? "rgba(99,102,241,0.35)"
-                : "rgba(99,102,241,0.15)",
-              border: "1px solid rgba(99,102,241,0.5)",
+                ? "rgba(251,191,36,0.35)"
+                : "rgba(251,191,36,0.15)",
+              border: "1px solid rgba(251,191,36,0.5)",
               transition: "background 0.2s",
             }}
           >
@@ -125,7 +125,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
               height="18"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="rgba(165,180,252,0.9)"
+              stroke="rgba(253,230,138,0.9)"
               strokeWidth="1.5"
             >
               <circle cx="12" cy="12" r="3" />
@@ -138,11 +138,11 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
         {/* Title */}
         <p
           className="mb-1 text-sm font-semibold tracking-widest uppercase"
-          style={{ color: "rgba(165,180,252,0.85)", fontFamily: "var(--font-display, sans-serif)" }}
+          style={{ color: "rgba(252,211,77,0.85)", fontFamily: "var(--font-serif, serif)" }}
         >
           Analysing Signal
         </p>
-        <p className="mb-8 text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
+        <p className="mb-8 text-xs" style={{ color: "rgba(214,211,209,0.4)" }}>
           TESS light curve pipeline running
         </p>
 
@@ -162,12 +162,12 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
                     background: done
                       ? "#34d399"
                       : active
-                      ? "#818cf8"
-                      : "rgba(255,255,255,0.12)",
+                      ? "#fbbf24"
+                      : "rgba(214,211,209,0.12)",
                     boxShadow: done
                       ? "0 0 6px rgba(52,211,153,0.6)"
                       : active
-                      ? "0 0 8px rgba(129,140,248,0.8)"
+                      ? "0 0 8px rgba(251,191,36,0.8)"
                       : "none",
                   }}
                 />
@@ -177,9 +177,9 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
                     color: done
                       ? "rgba(52,211,153,0.8)"
                       : active
-                      ? "rgba(255,255,255,0.85)"
-                      : "rgba(255,255,255,0.25)",
-                    fontFamily: "var(--font-body, sans-serif)",
+                      ? "rgba(245,240,235,0.9)"
+                      : "rgba(214,211,209,0.3)",
+                    fontFamily: "var(--font-sans, sans-serif)",
                   }}
                 >
                   {step.label}
@@ -187,7 +187,7 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
                 {active && (
                   <span
                     className="ml-auto text-[10px]"
-                    style={{ color: "rgba(129,140,248,0.6)" }}
+                    style={{ color: "rgba(251,191,36,0.65)" }}
                   >
                     running…
                   </span>
@@ -214,14 +214,14 @@ export default function SpaceLoader({ onComplete }: { onComplete: () => void }) 
             className="h-full rounded-full transition-all duration-500"
             style={{
               width: `${progress}%`,
-              background: "linear-gradient(to right, #6366f1, #22d3ee)",
-              boxShadow: "0 0 8px rgba(99,102,241,0.6)",
+              background: "linear-gradient(to right, #fbbf24, #f97316)",
+              boxShadow: "0 0 8px rgba(251,146,60,0.6)",
             }}
           />
         </div>
         <p
           className="text-xs tabular-nums"
-          style={{ color: "rgba(255,255,255,0.25)" }}
+          style={{ color: "rgba(214,211,209,0.4)" }}
         >
           {progress}% complete
         </p>
