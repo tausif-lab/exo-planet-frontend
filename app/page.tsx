@@ -3,7 +3,7 @@
 import { useState } from "react";
 import HeroSection from "./components/Hero";
 import SpaceLoader from "./components/Spaceloader";
-import Dashboard from "./components/Dashboard ";
+import Dashboard from "./components/Dashboard";
 
 type AppState = "hero" | "loading" | "dashboard";
 
